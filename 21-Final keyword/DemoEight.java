@@ -1,11 +1,8 @@
 class Alpha{
 
 	final int i;
+	//not initializing a final variable inside a constructor or instance block or hardcoding will give us error 
 
-	/*{
-
-		this.i = 25;//initialising a final variable inside a instance block is permitted
-	}*/
 	
 	void m1(int i){
 
@@ -13,7 +10,7 @@ class Alpha{
 	}
 }
 
-class DemoSeven{
+class DemoEight{
 
 	public static void main(String[] args){
 
