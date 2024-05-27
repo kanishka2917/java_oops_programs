@@ -1,6 +1,6 @@
 class Alpha{
 
-	int i;
+	final int i = 10;//hardcoding the final variable
 
 	Alpha(int i){
 
@@ -20,6 +20,7 @@ class DemoFour{
 		Alpha a = new Alpha(25);
 		System.out.println("value of i : " + a.i);
 		a.i = 35;//changing value of i in Alpha object
-		System.out.println("value of i : " + a.i);		
+		System.out.println("value of i : " + a.i);
+		
 	}
 }
