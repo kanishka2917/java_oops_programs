@@ -30,7 +30,7 @@ class DemoOne{
 
 		Alpha a = null;//declaring a reference variable of abstract class datatype alpha
 		//a = new Alpha();//we never create object of abstract class
-		Beta b = null;//eclaring a reference variable of subclass datatype beta
+		Beta b = null;//declaring a reference variable of subclass datatype beta
 		b = new Beta();
 		b.m1();
 		b.m2();
@@ -38,6 +38,6 @@ class DemoOne{
 		a = b;// superclass reference variable can refer to subclass objects
 		a.m1();
 		a.m2();
-		a.m3();
+		a.m3();// beta output will be printed
 	}
 }
