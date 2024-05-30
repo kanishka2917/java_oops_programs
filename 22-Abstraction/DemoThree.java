@@ -9,20 +9,18 @@ abstract class Alpha{
 	abstract void m3();//Abstract method
 }
 
-class Beta extends Alpha{//partial implementation
+abstract class Beta extends Alpha{//partial implementation
 
-	void m2(){
+	void m2(){//concrete method overridden
 
 		System.out.println("inside beta m2");
 	}
-	void fun(){
+	void fun(){//concrete method
 
 		System.out.println("inside beta fun");
 	}
 
-	abstract void m3();//it is optimal to write here
 }
-
 class Ceta extends Beta{
 
 	void m3(){
