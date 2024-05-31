@@ -43,7 +43,5 @@ class DemoTwo{
 		a.m1();
 		Alpha a1 = new Beta(10,20,30);
 		System.out.println(Alpha.z);
-		//Alpha.m1();
-		//Alpha.m2();
 	}
 }
