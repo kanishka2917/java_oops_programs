@@ -40,7 +40,7 @@ class Triangle extends Figure{
 		super(x, y);
 	}
 	
-	int area();{
+	abstract int area();{
 
 		int p; 
 		p = x * y / 2;
