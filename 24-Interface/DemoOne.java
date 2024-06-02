@@ -51,5 +51,11 @@ class DemoOne{
 		z.m3();
 		z.fun();
 		z.m4();
+
+		//implicit typecasting//a = z;
+		a.m1();
+		a.m2();
+		//Zeta z = (Alpha) b;
+		
 	}
 }
