@@ -24,24 +24,50 @@ class Lion implements Animal{
 
 		System.out.println("yummmyy- yum");
 	}
+
+	class Cat implements Lion{
+
+	public void sound(){
+
+		System.out.println("boww");
+	}
+	public void eat(){
+
+		System.out.println("yum-yummm");
+	}
 }
+}
+
 class Hello{
 
 	void m1(Animal z){
 
-		System.out.println(z);
-		z.sound();
-		z.eat();
+		if(z instanceof Lion){
+
+			Lion l = (Lion)z;
+			l.sound();
+			l.eat();
+	}
+	else if (z instanceof Dog){
+
+		Dog d = (Dog)z;
+		d.sound();
+		d.eat();
+	}
+
+	else if (z instanceof Cat){
+
+		Cat c = (Cat)z;
+		c.sound();
+		c.eat();
 	}
 }
-class DemoSix{
+}
+class DemoSeven{
 
 	public static void main(String args[]){
 
-		Hello h = new Hello();
-		Animal a = null;
-		a = new Dog();
-		h.m1(a);
-		//System.out.ptintln()	
+		
+	
 	}
 }
