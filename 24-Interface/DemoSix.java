@@ -3,7 +3,7 @@ interface Animal{
 	void sound();
 	void eat();
 }
-class Animal implements Dog{
+class Dog implements Animal{
 
 	public void sound(){
 
@@ -27,9 +27,9 @@ class Lion implements Animal{
 }
 class Hello{
 
-	void m1(Animal x){
+	void m1(Animal z){
 
-		System.out.println(x);
+		System.out.println(z);
 		z.sound();
 		z.eat();
 	}
@@ -41,7 +41,8 @@ class DemoSix{
 		Hello h = new Hello();
 		Animal a = null;
 		a = new Dog();
-		h.m1(x);
-		System.out.ptintln(x);
+		h.m1(a);
+		//System.out.ptintln();
+	
 	}
 }
